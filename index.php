@@ -48,7 +48,9 @@
                   {
                       ?>
                       <div class="alert alert-danger">
-                          <strong>Holy antilope Batman!</strong> Der Code war falsch!
+                          <strong>Holy antilope Batman!</strong> Der Code war falsch! <form>
+                              <button type="submit" name="code" value="" class="btn btn-link">Nochmal versuchen &larr;</button>
+                          </form>
                       </p>
                       <?php
                   }
