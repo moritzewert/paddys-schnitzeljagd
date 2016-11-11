@@ -49,7 +49,7 @@
                       ?>
                       <div class="alert alert-danger">
                           <strong>Holy antilope Batman!</strong> Der Code war falsch! <form>
-                              <button type="submit" name="code" value="" class="btn btn-link">Nochmal versuchen &larr;</button>
+                              <button type="submit" name="code" value="" class="btn btn-link">Nochmal versuchen &rarr;</button>
                           </form>
                       </div>
                       <?php
