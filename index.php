@@ -19,7 +19,7 @@
   </head>
   <body>
       <?php
-      if($_GET['code'] != '')
+      if(array_key_exists('code', $_GET) && $_GET['code'] != '')
       {
       ?>
       <p class="lead">
@@ -30,7 +30,7 @@
       else
       {
       ?>
-      <input name="code" class="form-control form-control-xl" />
+      <input placeholder="Code" name="code" class="form-control form-control-xl" />
       <?php
       }
       ?>
