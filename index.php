@@ -40,7 +40,7 @@
                   {
                       ?>
                       <div class="alert alert-success">
-                          <strong>Glückwunsch!</strong> Die Kombination für das Schloss lautet <code><?php echo $_ENV['COMBINATION'] ?></code>.
+                          <strong>Glückwunsch!</strong> Die Kombination für das Schloss lautet <code class="lead"><?php echo $_ENV['COMBINATION'] ?></code>.
                       </p>
                       <?php
                   }
