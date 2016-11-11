@@ -36,7 +36,7 @@
               <?php
               if(array_key_exists('code', $_GET) && $_GET['code'] != '')
               {
-                  if($_GET['code'] == '1234'
+                  if($_GET['code'] == '1234')
                   {
                       ?>
                       <div class="alert alert-success">
