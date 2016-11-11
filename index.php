@@ -61,7 +61,7 @@
               <form>
                   <div class="input-group input-group-lg">
                       <span class="input-group-addon" id="sizing-addon1"><span class="glyphicon glyphicon-lock"></span></span>
-                      <input type="text" class="form-control" name="code" placeholder="Code" aria-describedby="sizing-addon1">
+                      <input type="text" class="form-control" name="code" placeholder="Code" aria-describedby="sizing-addon1" autofocus>
                   </div>
               </form>
               <?php
