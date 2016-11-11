@@ -20,9 +20,12 @@
         html, body, #container {
             height: 100%;
         }
-        #container {
-            display: flex !important;
-            align-items: center;
+        body {
+            background-image: url(diagonal_waves_@2X.png);
+            background-repeat: repeat;
+        }
+        #container form input, #container p {
+            vertical-align: middle;
         }
     </style>
   </head>
