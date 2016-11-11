@@ -16,24 +16,37 @@
       <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
       <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
+    <style>
+        html, body, #container {
+            height: 100%;
+        }
+        #container {
+            display: flex;
+            align-items: center;
+        }
+    </style>
   </head>
   <body>
-      <?php
-      if(array_key_exists('code', $_GET) && $_GET['code'] != '')
-      {
-      ?>
-      <p class="lead">
-          Dein Code war <?php echo $_GET['code']; ?>
-      </p>
-      <?php
-      }
-      else
-      {
-      ?>
-      <input placeholder="Code" name="code" class="form-control form-control-xl" />
-      <?php
-      }
-      ?>
+      <div id="#container" class="container">
+          <?php
+          if(array_key_exists('code', $_GET) && $_GET['code'] != '')
+          {
+          ?>
+          <p class="lead">
+              Dein Code war <?php echo $_GET['code']; ?>
+          </p>
+          <?php
+          }
+          else
+          {
+          ?>
+          <form>
+              <input placeholder="Code" name="code" class="form-control input-lg" />
+          </form>
+          <?php
+          }
+          ?>
+      </div>
 
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
