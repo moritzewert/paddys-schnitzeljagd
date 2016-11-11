@@ -21,7 +21,7 @@
             height: 100%;
         }
         #container {
-            display: flex;
+            display: flex !important;
             align-items: center;
         }
     </style>
