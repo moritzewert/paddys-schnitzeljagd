@@ -59,7 +59,10 @@
               {
               ?>
               <form>
-                  <input placeholder="Code" name="code" class="form-control input-lg" />
+                  <div class="input-group input-group-lg">
+                      <span class="input-group-addon" id="sizing-addon1"><span class="glyphicon glyphicon-lock"></span></span>
+                      <input type="text" class="form-control" name="code" placeholder="Code" aria-describedby="sizing-addon1">
+                  </div>
               </form>
               <?php
               }
