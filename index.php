@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
-    <title>Hakuna my Taddl</title>
+    <title>Paddys Schnitzeljagd</title>
 
     <!-- Bootstrap -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
@@ -36,11 +36,11 @@
               <?php
               if(array_key_exists('code', $_GET) && $_GET['code'] != '')
               {
-                  if($_GET['code'] == '1234')
+                  if($_GET['code'] == $_ENV['CODE'])
                   {
                       ?>
                       <div class="alert alert-success">
-                          <strong>Glückwunsch!</strong> Die Kombination für das Schloss lautet <code>9635</code>.
+                          <strong>Glückwunsch!</strong> Die Kombination für das Schloss lautet <code><?php $_ENV['COMBINATION'] ?></code>.
                       </p>
                       <?php
                   }
