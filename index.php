@@ -36,11 +36,22 @@
               <?php
               if(array_key_exists('code', $_GET) && $_GET['code'] != '')
               {
-              ?>
-              <p class="lead">
-                  Dein Code war <?php echo $_GET['code']; ?>
-              </p>
-              <?php
+                  if($_GET['code'] == '1234'
+                  {
+                      ?>
+                      <div class="alert alert-success">
+                          <strong>Holy slug Batman!</strong> Der Code war richtig!
+                      </p>
+                      <?php
+                  }
+                  else
+                  {
+                      ?>
+                      <div class="alert alert-danger">
+                          <strong>Holy antilope Batman!</strong> Der Code war falsch!
+                      </p>
+                      <?php
+                  }
               }
               else
               {
