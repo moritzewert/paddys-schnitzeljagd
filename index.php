@@ -19,7 +19,7 @@
   </head>
   <body>
       <?php
-      if(isset($_GET['code'])
+      if($_GET['code'] != '')
       {
       ?>
       <p class="lead">
@@ -27,7 +27,8 @@
       </p>
       <?php
       }
-      else{
+      else
+      {
       ?>
       <input name="code" class="form-control form-control-xl" />
       <?php
