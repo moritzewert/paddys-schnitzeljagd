@@ -40,7 +40,7 @@
                   {
                       ?>
                       <div class="alert alert-success">
-                          <strong>Glückwunsch!</strong> Die Kombination für das Schloss lautet <code>1874</code>.
+                          <strong>Glückwunsch!</strong> Die Kombination für das Schloss lautet <code>9635</code>.
                       </p>
                       <?php
                   }
