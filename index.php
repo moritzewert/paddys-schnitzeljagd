@@ -21,34 +21,37 @@
             height: 100%;
         }
         body {
-            background-image: url(diagonal_waves_@2X.png);
+            background-image: url(diagonal_waves.png);
             background-repeat: repeat;
         }
-        #container form input, #container p {
-            vertical-align: middle;
+        #container {
+            display: flex;
+            align-items: center;
         }
     </style>
   </head>
   <body>
-      <div id="#container" class="container">
-          <?php
-          if(array_key_exists('code', $_GET) && $_GET['code'] != '')
-          {
-          ?>
-          <p class="lead">
-              Dein Code war <?php echo $_GET['code']; ?>
-          </p>
-          <?php
-          }
-          else
-          {
-          ?>
-          <form>
-              <input placeholder="Code" name="code" class="form-control input-lg" />
-          </form>
-          <?php
-          }
-          ?>
+      <div id="#container">
+          <div class="container">
+              <?php
+              if(array_key_exists('code', $_GET) && $_GET['code'] != '')
+              {
+              ?>
+              <p class="lead">
+                  Dein Code war <?php echo $_GET['code']; ?>
+              </p>
+              <?php
+              }
+              else
+              {
+              ?>
+              <form>
+                  <input placeholder="Code" name="code" class="form-control input-lg" />
+              </form>
+              <?php
+              }
+              ?>
+          </div>
       </div>
 
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
