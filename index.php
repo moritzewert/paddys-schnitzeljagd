@@ -31,7 +31,7 @@
     </style>
   </head>
   <body>
-      <div id="#container">
+      <div id="container">
           <div class="container">
               <?php
               if(array_key_exists('code', $_GET) && $_GET['code'] != '')
